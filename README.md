@@ -1,2 +1,2 @@
 # bike
-<img src="/images/usecase.PNG">
+<img src="images/usecase.PNG">
