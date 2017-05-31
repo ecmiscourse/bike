@@ -13,14 +13,6 @@ import org.apache.struts2.interceptor.SessionAware;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 
-
-
-/**
-* baseAction实现公共变量和注入Service
-* @author  马辉
-* @since   JDK1.8
-* @history 2016年10月7日下午3:08:09 马辉 新建
-*/
 public class BaseAction<T> extends ActionSupport implements RequestAware,
 SessionAware, ApplicationAware, ModelDriven<T> {
 
