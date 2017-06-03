@@ -1,37 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app id="WebApp_9" version="2.4"
- xmlns="http://java.sun.com/xml/ns/j2ee"
- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
- <!-- 配置Spring配置文件的位置 -->
- <context-param>
-  <param-name>contextConfigLocation</param-name>
-  <param-value>/WEB-INF/applicationContext.xml</param-value>
- </context-param>
- <filter>
-  <filter-name>openSessionInView</filter-name>
-  <filter-class>org.springframework.orm.hibernate5.support.OpenSessionInViewFilter</filter-class>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+	http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
+	id="WebApp_ID" version="3.1">
+	
+	<!-- 配置spring核心监听器，默认会以 /WEB-INF/applicationContext.xml作为配置文件 -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<!-- contextConfigLocation参数用来指定Spring的配置文件 -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/applicationContext*.xml</param-value>
+	</context-param>
+	
+	<!-- 用于切换数据库，sqlite/mysql -->
+	<context-param>  
+        <param-name>spring.profiles.active</param-name>  
+        <param-value>mysql</param-value>  
+	</context-param> 
+	
+	
+	<!-- 定义Spring MVC的前端控制器 -->
+    <!--Spring MVC本质是一个servlet。-->
+  <servlet>
+    <servlet-name>springmvc</servlet-name>
+    <servlet-class>
+        org.springframework.web.servlet.DispatcherServlet
+    </servlet-class>
+      <!--指定Spring Mvc的配置文件的位置，不指定默认使用WEB-INF/[ServletName]-servlet.xml
+      -->
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>/WEB-INF/springmvc-config.xml</param-value>
+    </init-param>
+    <!-- (自动启动)标记容器是否在启动的时候就加载这个servlet(实例化并调用其init()方法)正数的值越小，该servlet的优先级越高，应用启动时就越先加载 -->
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <!-- 让Spring MVC的前端控制器拦截所有请求 -->
+  <servlet-mapping>
+    <servlet-name>springmvc</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 编码过滤器 -->
+  <filter>
+		<filter-name>characterEncodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
  </filter>
- <filter>
-  <filter-name>struts2</filter-name>
-  <filter-class>org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter</filter-class>
- </filter>
- <filter-mapping>
-  <filter-name>openSessionInView</filter-name>
-  <url-pattern>/*</url-pattern>
- </filter-mapping>
- <filter-mapping>
-  <filter-name>struts2</filter-name>
-  <url-pattern>/*</url-pattern>
- </filter-mapping>
- <!-- 使用ContextLoaderListener初始化Spring容器 -->
- <listener>
-  <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
- </listener>
- <welcome-file-list>
-  <welcome-file>/WEB-INF/content/index.jsp</welcome-file>
- </welcome-file-list>
- <error-page>
-    <error-code>404</error-code> 
-    <location>/WEB-INF/content/error/404_error.jsp</location>
- </error-page>
+	<filter-mapping>
+		<filter-name>characterEncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<!-- jsp的配置 -->
+  <jsp-config>
+    <jsp-property-group>
+    	 <!-- 配置拦截所有的jsp页面  -->
+      <url-pattern>*.jsp</url-pattern>
+       <!-- 可以使用el表达式  -->
+      <el-ignored>false</el-ignored>
+      <!-- 不能在页面使用java脚本 -->
+      <scripting-invalid>true</scripting-invalid>
+      <!-- 给所有的jsp页面导入要依赖的库，tablib.jsp就是一个全局的标签库文件  -->
+<!--       <include-prelude>/WEB-INF/jsp/taglib.jsp</include-prelude> -->
+    </jsp-property-group>
+  </jsp-config>
+  
+  <error-page>
+    <error-code>404</error-code>
+    <location>/404.html</location>
+  </error-page>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
 </web-app>

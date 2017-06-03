@@ -1,4 +1,4 @@
 /com/
-/log4j2.xml
-/struts-config/
-/struts.xml
+/log4j.properties
+/mysql-db.properties
+/sqlite-db.properties
