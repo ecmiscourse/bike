@@ -12,7 +12,7 @@
     <div class="header1">
         <div class="header2">
             <div class="logo">
-                <strong>码上放心购后台管理系统</strong>
+                <strong>校园自行车管理系统</strong>
             </div>
             <div class="contact">
                 <div class="prompt">
@@ -54,24 +54,6 @@
 					var url ='${pageContext.request.contextPath}/exitAction_exit.action';
 					  $('<form method="post" action="' + url + '"></form>').appendTo('body').submit().remove();
 			    }    
-			});
-		};
-		//个人信息
-		function person_information(){
-			$('#win').window({
-				title:"个人信息",
-				width:300,
-				height:400,
-				content:'<iframe src="${pageContext.request.contextPath}/base/person_information" frameborder="0" width="100%" height="100%" />'
-			});
-		};
-		//修改密码
-		function modify_password(){
-			$('#win').window({
-				title:"修改密码",
-				width:300,
-				height:250,
-				content:'<iframe src="${pageContext.request.contextPath}/base/modify_password" frameborder="0" width="100%" height="100%" />'
 			});
 		};
 	</script>

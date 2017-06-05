@@ -19,10 +19,8 @@ public class AuthorizedInterceptor  implements HandlerInterceptor {
      * 该方法将在整个请求完成之后执行，主要作用是用于清理资源。
      */  
 	@Override
-	public void afterCompletion(HttpServletRequest request,
-			HttpServletResponse response, Object handler, Exception exception)
+	public void afterCompletion(HttpServletRequest request,HttpServletResponse response, Object handler, Exception exception)
 			throws Exception {
-		
 	}
 
 	 /** 
@@ -30,9 +28,7 @@ public class AuthorizedInterceptor  implements HandlerInterceptor {
      * 执行时间是在处理器进行处理之 后，也就是在Controller的方法调用之后执行。
      */  
 	@Override
-	public void postHandle(HttpServletRequest request, HttpServletResponse response,
-			Object handler, ModelAndView mv) throws Exception {
-		
+	public void postHandle(HttpServletRequest request, HttpServletResponse response,Object handler, ModelAndView mv) throws Exception {
 	}
 
 	 /** 
@@ -41,8 +37,7 @@ public class AuthorizedInterceptor  implements HandlerInterceptor {
      * 如果preHandle的返回值为true，则会继续执行postHandle和afterCompletion。
      */  
 	@Override
-	public boolean preHandle(HttpServletRequest request, HttpServletResponse response,
-			Object handler) throws Exception {
+	public boolean preHandle(HttpServletRequest request, HttpServletResponse response,Object handler) throws Exception {
 		/** 默认用户没有登录 */
 		boolean flag = false; 
 		/** 获得请求的ServletPath */
@@ -55,7 +50,7 @@ public class AuthorizedInterceptor  implements HandlerInterceptor {
             }
         }
         /** 拦截请求 */
-        if (!flag){
+//        if (!flag){
         	/** 1.获取session中的用户  */
 //        	User user = (User) request.getSession().getAttribute(HrmConstants.USER_SESSION);
         	/** 2.判断用户是否已经登录 */
@@ -67,9 +62,7 @@ public class AuthorizedInterceptor  implements HandlerInterceptor {
 //        	}else{
 //        		 flag = true;
 //        	}
-        }
+//        }
         return flag;
-		
 	}
-
 }
