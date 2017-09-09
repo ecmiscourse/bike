@@ -1,5 +1,11 @@
 package com.bike.model;
 
+/**
+* <p>Title: Person</p>
+* <p>Description: </p>
+* @author 邓忍
+* @date 2017年7月6日
+*/
 public class Person {
 	private Integer id;
 	private String name;
