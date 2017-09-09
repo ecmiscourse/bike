@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="footer">
-        Copyright © 2017 校园自行车(支持最新版的360浏览器极速模式、Chrome浏览器、Firefox浏览器) 苏ICP备12345678号-1
+        Copyright © 2016 校园公共自行车管理系统(支持最新版的360浏览器极速模式、Chrome浏览器、Firefox浏览器)
     </div>
 </body>
 </html>

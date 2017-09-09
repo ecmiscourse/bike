@@ -12,19 +12,19 @@
 	<script type="text/javascript">
 		$(function() {
 			$("#menu").tree(
-				{
-					url : '${pageContext.request.contextPath}/person/person_showMenu',
-					onClick : function(node) {
-						if ($('#menu').tree('isLeaf', node.target)) {//判断是否是叶子节点
-							if($('#menu').tree('getParent', node.target)!=null)
-								addNewTab($('#menu').tree('getParent', node.target).text+"-"+node.text,'${pageContext.request.contextPath}'+ node.url);
-							else
-								addNewTab(node.text,'${pageContext.request.contextPath}'+ node.url);
-						}else{
-							$("#menu").tree('toggle',node.target); 
-						}
-					}
-				});
+							{
+								url : '${pageContext.request.contextPath}/base/resourceAction_getMenu.action',
+								onClick : function(node) {
+									if ($('#menu').tree('isLeaf', node.target)) {//判断是否是叶子节点
+										if($('#menu').tree('getParent', node.target)!=null)
+											addNewTab(node.text,'${pageContext.request.contextPath}'+ node.url);
+										else
+											addNewTab(node.text,'${pageContext.request.contextPath}'+ node.url);
+									}else{
+										$("#menu").tree('toggle',node.target); 
+									}
+								}
+							});
 		});
 	</script>
 </body>
