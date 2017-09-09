@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bike.mapper.StationMapper" >
+  <insert id="addStations" parameterType="com.bike.model.Station">
+    insert into station(station_name, create_date, deleted)
+      values(#{stationName},now(),#{deleted});
+  </insert>
+  <select id="getByBikeId">
+    SELECT s.* FROM station s LEFT JOIN station_bike sb ON s.id=sb.station_id
+    WHERE sb.bike_id=#{id}
+  </select>
+
+  <insert id="dispatch" parameterType="map">
+    INSERT INTO station_bike(bike_id,station_id) VALUES
+    <foreach collection="bikes" index="i" open="(" separator="," close=")" item="item"  >
+      #{item},#{stationId}
+    </foreach>
+  </insert>
+</mapper>

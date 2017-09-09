@@ -1,13 +1,9 @@
 package com.bike.service;
 
 import com.bike.model.Person;
+import org.springframework.stereotype.Service;
 
+@Service
 public interface PersonService {
-	/**
-	 * 登录
-	 * @param name
-	 * @param password
-	 * @return
-	 */
-	Person login(String name,String password);
+	Person login(Person record);
 }

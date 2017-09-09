@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bike.mapper.BikeMapper" >
+  <select id="getBikeById" resultType="com.bike.model.Bike" parameterType="java.lang.Integer">
+    SELECT * FROM bike WHERE id=#{id}
+  </select>
+  <select id="getBikeByStationId" resultType="com.bike.model.Bike" parameterType="java.lang.Integer">
+    SELECT * FROM bike b LEFT JOIN station s ON b.station_id=s.id WHERE s.id=#{id}
+  </select>
+  <update id="updateBikeStatus" parameterType="java.lang.Integer">
+    UPDATE bike SET status=#{status} WHERE id=#{id}
+  </update>
+</mapper>

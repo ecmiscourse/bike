@@ -32,9 +32,9 @@ public class PersonController {
 	 * @return 跳转的视图
 	 * */
 	@RequestMapping(value="/login")
-	 public String login(ModelAndView mv,@RequestParam("name") String name,@RequestParam("password") String password,HttpSession session){
+	 public String login(ModelAndView mv, Person person,HttpSession session){
 		// 调用业务逻辑组件判断用户是否可以登录
-		Person person = personService.login(name, password);
+		Person loginPerson = personService.login(person);
 		String url="";
 		if(person != null){
 			 //将用户保存到HttpSession当中
