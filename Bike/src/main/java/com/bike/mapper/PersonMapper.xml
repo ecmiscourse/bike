@@ -11,4 +11,15 @@
 	<select id="login" parameterType="String" resultMap="com.bike.model.Person" databaseId="mysql">
   		SELECT * FROM person WHERE name = #{name} AND password = #{password}
   	</select>
+	<update id="updatePerson" parameterType="com.bike.model.Person" >
+		update person
+		set name = #{name,jdbcType=VARCHAR},
+		person_sn = #{personSn,jdbcType=VARCHAR},
+		create_by = #{createBy,jdbcType=BIGINT},
+		create_date = now(),
+		station_id = #{districtId,jdbcType=BIGINT},
+		state = #{state,jdbcType=INTEGER},
+		deleted = #{deleted,jdbcType=INTEGER}
+		where id = #{id,jdbcType=BIGINT}
+	</update>
 </mapper>

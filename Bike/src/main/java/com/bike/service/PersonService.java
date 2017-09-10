@@ -6,4 +6,7 @@ import org.springframework.stereotype.Service;
 @Service
 public interface PersonService {
 	Person login(Person record);
+	int addPerson(Person record);
+	int deletePerson(int id);
+	int updatePerson(Person record);
 }

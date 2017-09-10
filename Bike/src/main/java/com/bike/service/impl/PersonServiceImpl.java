@@ -16,4 +16,19 @@ public class PersonServiceImpl implements  PersonService{
 	public Person login(Person record) {
 		return personMapper.login(record);
 	}
+
+	@Override
+	public int addPerson(Person record) {
+		return personMapper.addPerson(record);
+	}
+
+	@Override
+	public int deletePerson(int id) {
+		return personMapper.deletePerson(id);
+	}
+
+	@Override
+	public int updatePerson(Person record) {
+		return personMapper.updatePerson(record);
+	}
 }

@@ -7,4 +7,6 @@ public interface BikeMapper {
     Bike getBikeById(int id);
     Bike getBikeByStationId(int id);
     int updateBikeStatus(@Param("id") int id,@Param("status") int status);
+    int updateBike(Bike bike);
+    int deleteBike(int id);
 }

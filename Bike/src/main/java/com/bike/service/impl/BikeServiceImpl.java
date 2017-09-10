@@ -29,5 +29,15 @@ public class BikeServiceImpl implements BikeService {
         return bikeMapper.updateBikeStatus(id, status);
     }
 
+    @Override
+    public int updateBike(Bike bike) {
+        return bikeMapper.updateBike(bike);
+    }
+
+    @Override
+    public int deleteBike(int id) {
+        return bikeMapper.deleteBike(id);
+    }
+
 
 }

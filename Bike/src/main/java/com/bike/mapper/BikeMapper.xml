@@ -10,4 +10,17 @@
   <update id="updateBikeStatus" parameterType="java.lang.Integer">
     UPDATE bike SET status=#{status} WHERE id=#{id}
   </update>
+  <delete id="deleteBike" parameterType="java.lang.Integer">
+    UPDATE bike SET deleted=1 WHERE id=#{id}
+  </delete>
+  <update id="updateBike" parameterType="com.bike.model.Bike" >
+    update bike
+    set bike_sn = #{bikeSn,jdbcType=VARCHAR},
+    create_by = #{createBy,jdbcType=BIGINT},
+    create_date = now(),
+    station_id = #{districtId,jdbcType=BIGINT},
+    state = #{state,jdbcType=INTEGER},
+    deleted = #{deleted,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
 </mapper>

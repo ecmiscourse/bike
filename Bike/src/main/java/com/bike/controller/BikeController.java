@@ -38,10 +38,17 @@ public class BikeController {
 		bikeService.updateBikeStatus(id,1);////0:状态为还
 		return JsonResult.ok();
 	}
-	
-	
-	
-	
-	
-	
+
+	@RequestMapping(value = "/updateBike",method = RequestMethod.GET)
+	public JsonResult updateBike(int id){
+		Bike bike=bikeService.getBikeById(id);
+		bikeService.updateBike(bike);
+		return JsonResult.ok();
+	}
+
+	@RequestMapping(value = "/deleteBike",method = RequestMethod.GET)
+	public JsonResult deleteBike(int id){
+		bikeService.deleteBike(id);
+		return JsonResult.ok();
+	}
 }

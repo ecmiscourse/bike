@@ -13,4 +13,6 @@ public interface BikeService {
     Bike getBikeById(int id);
     Bike getBikeByStationId(int id);
     int updateBikeStatus(int id,int status);
+    int updateBike(Bike bike);
+    int deleteBike(int id);
 }

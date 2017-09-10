@@ -2,10 +2,12 @@ package com.bike.controller;
 
 import javax.servlet.http.HttpSession;
 
+import com.bike.util.JsonResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.portlet.ModelAndView;
 
@@ -65,11 +67,22 @@ public class PersonController {
 	 public String footer(){
 		return "footer";
 	}
-	
-	
-	
-	
-	
-	
-	
+
+	@RequestMapping(value = "/addPerson",method = RequestMethod.POST)
+	public JsonResult addPerson(Person person){
+		personService.addPerson(person);
+		return JsonResult.ok();
+	}
+
+	@RequestMapping(value = "/updatePerson",method = RequestMethod.GET)
+	public JsonResult updatePerson(Person person){
+		personService.updatePerson(person);
+		return JsonResult.ok();
+	}
+
+	@RequestMapping(value = "/deletePerson",method = RequestMethod.GET)
+	public JsonResult deletePerson(int id){
+		personService.deletePerson(id);
+		return JsonResult.ok();
+	}
 }
