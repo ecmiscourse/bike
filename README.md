@@ -69,14 +69,14 @@ b) 系统环境： Windows<br/>
 	本软件是专用软件，具有较强的针对性。在我们的编码和设计中，除了参阅相关的资料，不涉及已存在的设计专利、不侵犯国家、学校的相关制度，因此具法律可行性。<br/>
 # 三、系统分析<br/>
 ## 3.1 范围定义<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;范围定义阶段回答这样一个问题：“这个项目看起来是否值得”，为了回答这个问题， 我们定义了项目的范围以及触发该项目的可见的问题、机会和指令。
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;范围定义阶段回答这样一个问题：“这个项目看起来是否值得”，为了回答这个问题， 我们定义了项目的范围以及触发该项目的可见的问题、机会和指令。<br/>
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E8%8C%83%E5%9B%B4%E5%AE%9A%E4%B9%89.PNG)
 ## 3.2 问题分析<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在这个阶段要解决两个问题：“提出的问题真的值得解决问题吗？”，“值得构造一个新系统吗？”，为此，我们必须充分研究和理解问题领域并全面分析其中存在的题、机会和约束条件。<br/>
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90.PNG)
 ## 3.3 需求分析<br/>
-![image](https://github.com/ecmiscourse/bike/blob/master/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90.PNG)
 1、 记录相关用例词汇表：<br/>
+![image](https://github.com/ecmiscourse/bike/blob/master/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90.PNG)
 ## 2、构造用例模型图：
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E7%94%A8%E4%BE%8B%E5%9B%BE.jpg)
 
