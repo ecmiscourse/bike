@@ -68,6 +68,4 @@ Web 方式完成用户与系统的交互，系统的功能模块具体有自行�
 ### 7、人员管理
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E4%BA%BA%E5%91%98.PNG)
 ### 8、站点管理
->>>>>>> origin/maste
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E7%AB%99%E7%82%B9.PNG)
->>>>>>> origin/master
