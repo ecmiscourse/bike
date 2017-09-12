@@ -50,7 +50,7 @@ Web 方式完成用户与系统的交互，系统的功能模块具体有自行�
 1、登陆界面
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E7%99%BB%E9%99%86.PNG)
 2、主页面
-![image](https://github.com/ecmiscourse/bike/blob/master/%E7%99%BB%E9%99%86.PNG)
+![image](https://github.com/ecmiscourse/bike/blob/master/%E4%B8%BB%E9%A1%B5%E9%9D%A2.PNG)
 3、我借的
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E7%AB%99%E7%82%B9.PNG)
 4、我还的
