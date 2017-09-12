@@ -91,17 +91,15 @@ b) 系统环境： Windows<br/>
 ### 1、登陆界面
 
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E7%99%BB%E9%99%86.PNG)
-### 2、主页面
-![image](https://github.com/ecmiscourse/bike/blob/master/%E4%B8%BB%E9%A1%B5%E9%9D%A2.PNG)
-### 3、我借的
+### 2、我借的
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E6%93%8D%E4%BD%9C1.PNG)
-### 4、我还的
+### 3、我还的
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E6%93%8D%E4%BD%9C2.PNG)
-### 5、借
+### 4、借
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E5%80%9F.PNG)
-### 6、还
+### 5、还
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E8%BF%98.PNG)
-### 7、人员管理
+### 6、人员管理
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E4%BA%BA%E5%91%98.PNG)
-### 8、站点管理
+### 7、站点管理
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E7%AB%99%E7%82%B9.PNG)
