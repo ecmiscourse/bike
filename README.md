@@ -89,7 +89,11 @@ b) 系统环境： Windows<br/>
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E7%B1%BB%E5%9B%BE.png)
 ## 4.4数据库结构图
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93.png)
-## 4.4部分代码
+## 4.5项目结构图
+![image](https://github.com/ecmiscourse/bike/blob/master/8.png)
+![image](https://github.com/ecmiscourse/bike/blob/master/9.png)
+![image](https://github.com/ecmiscourse/bike/blob/master/10.png)
+## 4.6部分代码
 ### 1、查询该自行车是否已被该用户借了
 ![image](https://github.com/ecmiscourse/bike/blob/master/1.png)
 ### 2、查询该自行车是否已还
