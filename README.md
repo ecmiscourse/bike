@@ -85,9 +85,27 @@ b) 系统环境： Windows<br/>
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E7%B3%BB%E7%BB%9F%E5%8A%9F%E8%83%BD%E7%BB%93%E6%9E%84%E5%9B%BE.PNG)
 ## 4.2系统时序图
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E9%A1%BA%E5%BA%8F%E5%9B%BE.jpg)
+## 4.3类图
+![image](https://github.com/ecmiscourse/bike/blob/master/%E7%B1%BB%E5%9B%BE.png)
+## 4.4数据库结构图
+![image](https://github.com/ecmiscourse/bike/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93.png)
+## 4.4部分代码
+### 1、查询该自行车是否已被该用户借了
+![image](https://github.com/ecmiscourse/bike/blob/master/1.png)
+### 2、查询该自行车是否已还
+![image](https://github.com/ecmiscourse/bike/blob/master/2.png)
+### 3、查询该自行车是否能借
+![image](https://github.com/ecmiscourse/bike/blob/master/3.png)
+### 4、借自行车
+![image](https://github.com/ecmiscourse/bike/blob/master/4.png)
+### 5、验证是否满足条件
+![image](https://github.com/ecmiscourse/bike/blob/master/5.png)
+### 6、只能借一辆自行车
+![image](https://github.com/ecmiscourse/bike/blob/master/6.png)
+### 7、同一辆车只能借一次
+![image](https://github.com/ecmiscourse/bike/blob/master/7.png)
 
-
-## 4.3系统运行界面
+## 4.5系统运行界面
 ### 1、登陆界面
 
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E7%99%BB%E9%99%86.PNG)
