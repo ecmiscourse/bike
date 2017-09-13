@@ -85,6 +85,7 @@ b) 系统环境： Windows<br/>
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E7%B3%BB%E7%BB%9F%E5%8A%9F%E8%83%BD%E7%BB%93%E6%9E%84%E5%9B%BE.PNG)
 ## 4.2系统时序图
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E9%A1%BA%E5%BA%8F%E5%9B%BE.jpg)
+![image](https://github.com/ecmiscourse/bike/blob/master/%E8%BF%98%E8%BD%A6%E8%BF%87%E7%A8%8B.png)
 ## 4.3类图
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E7%B1%BB%E5%9B%BE.png)
 ## 4.4数据库结构图
