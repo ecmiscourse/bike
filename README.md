@@ -75,7 +75,7 @@ b) 系统环境： Windows<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在这个阶段要解决两个问题：“提出的问题真的值得解决问题吗？”，“值得构造一个新系统吗？”，为此，我们必须充分研究和理解问题领域并全面分析其中存在的题、机会和约束条件。<br/>
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90.PNG)
 ## 3.3 需求分析<br/>
-1、 记录相关用例词汇表：<br/>
+## 1、 记录相关用例词汇表：<br/>
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90.PNG)
 ## 2、构造用例模型图：
 ![image](https://github.com/ecmiscourse/bike/blob/master/%E7%94%A8%E4%BE%8B%E5%9B%BE.jpg)
